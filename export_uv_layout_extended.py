@@ -494,7 +494,6 @@ def register():
 	bpy.utils.register_class(ExportUVLayoutExtended)
 
 	Scene.export_uv_layout_extended_data = bpy.props.PointerProperty(type=ExportUVLayoutExtendedData)
-	del bpy.context.scene['export_uv_layout_extended_data'] # Reset to defaults after restart
 
 	bpy.types.IMAGE_MT_uvs.append(menu_func)
 
